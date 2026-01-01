@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+confluence:
+  base-url: ${CONFLUENCE_BASE_URL:https://<your-company>.atlassian.net/wiki}
+  email: ${CONFLUENCE_EMAIL:}
+  api-token: ${CONFLUENCE_API_TOKEN:}
+
+openai:
+  api-key: ${OPENAI_API_KEY:}
+  embeddings-model: ${OPENAI_EMBEDDINGS_MODEL:text-embedding-3-small}
+  llm-model: ${OPENAI_LLM_MODEL:gpt-4o-mini}
+
+spring:
+  datasource:
+    # To enable database: Set SPRING_DATASOURCE_URL environment variable
+    # Example: export SPRING_DATASOURCE_URL=jdbc:postgresql://localhost:5432/rag
+    # If not set, database features will be disabled and the app will start without database
+    url: ${SPRING_DATASOURCE_URL:}
+    username: ${SPRING_DATASOURCE_USERNAME:${PG_USER:postgres}}
+    password: ${SPRING_DATASOURCE_PASSWORD:${PG_PASSWORD:}}
+  jdbc:
+    template:
+      query-timeout: 30
