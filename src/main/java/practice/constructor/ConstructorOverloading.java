@@ -1,20 +1,20 @@
-package practice.common;
+package practice.constructor;
 
-public class ConstructorExamples
+public class ConstructorOverloading
 {
     String value = "Strong";
-    ConstructorExamples()
+    ConstructorOverloading()
     {
         System.out.println("This is Constructor");
     }
 
-    ConstructorExamples(String s)
+    ConstructorOverloading(String s)
     {
         this.value = s;
         System.out.println("This is one parameters Constructor");
     }
 
-    ConstructorExamples(String s, int j)
+    ConstructorOverloading(String s, int j)
     {
         System.out.println("This is two parameters Constructor");
     }
