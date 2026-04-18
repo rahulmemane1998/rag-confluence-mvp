@@ -1,8 +1,7 @@
-package practice.java8features.steamAPI;
+package practice.java8features.steamAPI.basic;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Question5

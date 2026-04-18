@@ -1,4 +1,4 @@
-package practice.java8features.steamAPI;
+package practice.java8features.steamAPI.general;
 
 import java.util.Arrays;
 import java.util.List;
