@@ -1,7 +1,6 @@
 package practice.java8features.steamAPI.intermediate;
 
 import java.util.List;
-import java.util.OptionalDouble;
 import java.util.Set;
 import java.util.stream.Collectors;
 
